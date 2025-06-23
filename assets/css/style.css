@@ -1,0 +1,23 @@
+body {
+  font-family: sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+  margin: 0;
+  padding: 0 20px;
+}
+header, footer {
+  background: #1c1c1c;
+  padding: 16px;
+}
+a {
+  color: #ffae00;
+  text-decoration: none;
+}
+img {
+  border-radius: 8px;
+  margin: 16px 0;
+}
+iframe {
+  margin-top: 16px;
+  border-radius: 8px;
+}
