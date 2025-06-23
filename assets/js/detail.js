@@ -76,6 +76,24 @@ fetchDataFromServer(
             <div class="meta-item">${release_date?.split("-")[0] ?? "Not Released"}</div>
             <div class="meta-item card-badge">${certification}</div>
           </div>
+          `;
+
+fetch("./assets/players.json")
+  .then((res) => res.json())
+  .then((players) => {
+    const iframeURL = players[movieId];
+
+    const videoBox = document.createElement("div");
+    videoBox.className = "video-box";
+    videoBox.innerHTML = `
+      <h3 class="title">Смотреть онлайн</h3>
+      ${iframeURL
+        ? `<iframe src="${iframeURL}" width="100%" height="480" allowfullscreen loading="lazy" style="border-radius:8px;border:none;"></iframe>`
+        : `<p style="color:#ccc;">Плеер временно недоступен.</p>`}
+    `;
+
+    pageContent.querySelector(".detail-box").appendChild(videoBox);
+  });
 
           <p class="genre">${getGenres(genres)}</p>
           <p class="overview">${overview}</p>
