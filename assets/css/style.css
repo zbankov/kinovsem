@@ -42,4 +42,14 @@ main {
   flex-grow: 1;
   padding-top: 20px;
 }
+main {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 140px;
+}
 
+footer {
+  margin-top: 20px;
+}
+  
+  
