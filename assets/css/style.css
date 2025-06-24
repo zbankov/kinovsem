@@ -21,3 +21,11 @@ iframe {
   margin-top: 16px;
   border-radius: 8px;
 }
+nav a {
+  margin-right: 10px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #fff;
+}
