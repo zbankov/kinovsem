@@ -67,5 +67,23 @@ footer {
   color: #fff;
   margin-top: 20px;
 }
+.movie-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 20px 0;
+  scroll-behavior: smooth;
+}
+
+.movie-scroll img {
+  height: 200px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.movie-scroll img:hover {
+  transform: scale(1.05);
+}
+
   
   
