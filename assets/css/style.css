@@ -21,6 +21,9 @@ iframe {
   margin-top: 16px;
   border-radius: 8px;
 }
+nav {
+  margin-top: 12px;
+}
 nav a {
   margin-right: 10px;
   font-weight: bold;
