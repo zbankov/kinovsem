@@ -53,6 +53,23 @@ h2.welcome {
 footer {
   margin-top: 40px;
 }
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo-wrapper h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.welcome {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
 
   
   
