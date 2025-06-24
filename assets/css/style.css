@@ -42,12 +42,6 @@ main {
   flex-grow: 1;
   padding-top: 20px;
 }
-main {
-  font-size: 20px;
-  margin-top: 45px;
-  margin-left: 140px;
-}
-
 footer {
   margin-top: 40px;
 }
@@ -56,7 +50,6 @@ main {
   margin-top: 10px;
   margin-left: 0;
 }
-
 h2.welcome {
   font-size: 18px;
   margin-top: -20px;
