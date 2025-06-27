@@ -67,12 +67,20 @@ footer {
   color: #fff;
   margin-top: 20px;
 }
+.movie-scroll-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
 .movie-scroll {
   display: flex;
-  overflow-x: auto;
   gap: 16px;
   padding: 20px 0;
-  scroll-behavior: smooth;
+  width: max-content;
+  animation: scroll-posters 60s linear infinite;
+}
+.movie-scroll:hover {
+  animation-play-state: paused;
 }
 
 .movie-scroll img {
@@ -80,9 +88,13 @@ footer {
   border-radius: 12px;
   transition: transform 0.3s ease;
 }
-
 .movie-scroll img:hover {
   transform: scale(1.05);
+}
+
+@keyframes scroll-posters {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
   
